@@ -1,11 +1,10 @@
 apply plugin: 'com.android.library'
-apply plugin: 'maven'
-apply plugin: 'signing'
 //apply from: '../.publishing/sonatype.gradle'
 
 archivesBaseName = 'android-crop'
 
 android {
+    namespace 'com.soundcloud.android.crop'
     compileSdk 34
 
     defaultConfig {
@@ -15,13 +14,6 @@ android {
         testApplicationId 'com.soundcloud.android.crop.test'
         testInstrumentationRunner 'android.test.InstrumentationTestRunner'
     }
-}
-    lintOptions {
-        abortOnError false
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
     }
 
 dependencies {

@@ -8,9 +8,12 @@ buildscript {
     }
 }
 
+ext.VERSION = '1.0.0'
+ext.VERSION_CODE = '1'
+
 allprojects {
     group = 'com.soundcloud.android'
-    version = project.VERSION
+    version = '1.0.0'
 
     repositories {
         google()

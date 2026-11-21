@@ -3,6 +3,7 @@ apply plugin: 'com.android.application'
 archivesBaseName = 'android-crop-example'
 
 android {
+    namespace 'com.soundcloud.android.crop.example'
     compileSdk 34
 
     defaultConfig {
@@ -12,14 +13,6 @@ android {
         versionName project.VERSION
     }
 }
-    lintOptions {
-        abortOnError false
-    }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
-    }
-
 dependencies {
     implementation project(':lib')
 }
